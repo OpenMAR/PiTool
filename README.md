@@ -17,20 +17,20 @@ Deployment steps:
 2. Enter the version number and press Enter to generate the installation package.
 
 Directory Structure:
-├── Readme.md                   
-├── LICENSE
-├── build_pack_tool.bat                         
-├── PiTool                      
-│   ├── PiTool.pro              //Project file
-│   ├── src
-│   	└── main.cpp            //Entry file
-│   ├── qml 
-│   	└── main_tools.qml      //UI master file       
-│   ├── resource                                       
-│   └── piSvc                          
-├── PiTool_setup                      
-│   └── PiService
-│   └── PvrRuntime
-│   └── Resouces   
-│   └── dfudriver      
-└── setup
+  ├── Readme.md                   
+  ├── LICENSE
+  ├── build_pack_tool.bat                         
+  ├── PiTool                      
+  │   ├── PiTool.pro              //Project file
+  │   ├── src
+  │   	└── main.cpp            //Entry file
+  │   ├── qml 
+  │   	└── main_tools.qml      //UI master file       
+  │   ├── resource                                       
+  │   └── piSvc                          
+  ├── PiTool_setup                      
+  │   └── PiService
+  │   └── PvrRuntime
+  │   └── Resouces   
+  │   └── dfudriver      
+  └── setup
