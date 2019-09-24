@@ -26,14 +26,12 @@ Directory Structure:
   │   ├── src
   │   	└── main.cpp        //Entry file
   │   ├── qml 
-  │   	└── main_tools.qml  //UI master file       
+  │   	└── main_tools.qml  //UI master file
   │   ├── resource                                       
   │   └── piSvc                          
   ├── PiTool_setup
-  
   │   └── PiService
   │   └── PvrRuntime
   │   └── Resouces
-  
   │   └── dfudriver      
   └── setup
