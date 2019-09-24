@@ -29,9 +29,11 @@ Directory Structure:
   │   	└── main_tools.qml  //UI master file       
   │   ├── resource                                       
   │   └── piSvc                          
-  ├── PiTool_setup                      
+  ├── PiTool_setup
+  
   │   └── PiService
   │   └── PvrRuntime
-  │   └── Resouces   
+  │   └── Resouces
+  
   │   └── dfudriver      
   └── setup
