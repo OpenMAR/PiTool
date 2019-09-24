@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1745516D-CADB-3BB2-86BE-02890BB90EE6}</ProjectGuid>
+    <RootNamespace>PiTool</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>PiTool</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>PiTool</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">PiTool</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">PiTool</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQuick;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQml;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWebSockets;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtSql;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore;release;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmain.lib;shell32.lib;User32.lib;NETAPI32.LIB;Advapi32.lib;PiLog.lib;piSvc\PiSvc.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Quick.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgets.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Gui.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Qml.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5WebSockets.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Network.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Sql.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;piSvc;PiLog;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\PiTool.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQuick;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQml;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWebSockets;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtSql;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore;debug;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmaind.lib;shell32.lib;User32.lib;NETAPI32.LIB;Advapi32.lib;PiLog.lib;piSvc\PiSvc.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Quickd.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgetsd.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Guid.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Qmld.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5WebSocketsd.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Networkd.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Sqld.lib;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;piSvc;PiLog;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\PiTool.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_QUICK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CustomTrayicon.cpp" />
+    <ClCompile Include="src\DownloadFile.cpp" />
+    <ClCompile Include="quazip\JlCompress.cpp" />
+    <ClCompile Include="src\OnlineItem.cpp" />
+    <ClCompile Include="src\OnlineModel.cpp" />
+    <ClCompile Include="src\OnlineRequest.cpp" />
+    <ClCompile Include="src\RegisterHandler.cpp" />
+    <ClCompile Include="src\ResourceItem.cpp" />
+    <ClCompile Include="src\ResourceModel.cpp" />
+    <ClCompile Include="src\RpcServer.cpp" />
+    <ClCompile Include="src\Setting.cpp" />
+    <ClCompile Include="src\SingleApplication.cpp" />
+    <ClCompile Include="src\SteamModel.cpp" />
+    <ClCompile Include="src\VersionModel.cpp" />
+    <ClCompile Include="src\diagnoseHandler.cpp" />
+    <ClCompile Include="src\hwObject.cpp" />
+    <ClCompile Include="src\jsonhandler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\piservice.cpp" />
+    <ClCompile Include="quazip\qioapi.cpp" />
+    <ClCompile Include="quazip\quaadler32.cpp" />
+    <ClCompile Include="quazip\quacrc32.cpp" />
+    <ClCompile Include="quazip\quagzipfile.cpp" />
+    <ClCompile Include="quazip\quaziodevice.cpp" />
+    <ClCompile Include="quazip\quazip.cpp" />
+    <ClCompile Include="quazip\quazipdir.cpp" />
+    <ClCompile Include="quazip\quazipfile.cpp" />
+    <ClCompile Include="quazip\quazipfileinfo.cpp" />
+    <ClCompile Include="quazip\quazipnewinfo.cpp" />
+    <ClCompile Include="quazip\unzip.c" />
+    <ClCompile Include="src\versioncontrol.cpp" />
+    <ClCompile Include="quazip\zip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\CustomTrayicon.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\CustomTrayicon.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\CustomTrayicon.h -o release\moc_CustomTrayicon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/CustomTrayicon.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_CustomTrayicon.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\CustomTrayicon.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\CustomTrayicon.h -o debug\moc_CustomTrayicon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/CustomTrayicon.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_CustomTrayicon.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\DownloadFile.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\DownloadFile.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\DownloadFile.h -o release\moc_DownloadFile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/DownloadFile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_DownloadFile.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\DownloadFile.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\DownloadFile.h -o debug\moc_DownloadFile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/DownloadFile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_DownloadFile.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="PiLog\Exception.h" />
+    <ClInclude Include="quazip\JlCompress.h" />
+    <ClInclude Include="PiLog\JsonHandler.h" />
+    <CustomBuild Include="src\OnlineItem.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\OnlineItem.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineItem.h -o release\moc_OnlineItem.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/OnlineItem.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_OnlineItem.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\OnlineItem.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineItem.h -o debug\moc_OnlineItem.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/OnlineItem.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_OnlineItem.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\OnlineModel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\OnlineModel.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineModel.h -o release\moc_OnlineModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/OnlineModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_OnlineModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\OnlineModel.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineModel.h -o debug\moc_OnlineModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/OnlineModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_OnlineModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\OnlineRequest.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\OnlineRequest.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineRequest.h -o release\moc_OnlineRequest.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/OnlineRequest.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_OnlineRequest.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\OnlineRequest.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\OnlineRequest.h -o debug\moc_OnlineRequest.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/OnlineRequest.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_OnlineRequest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\RegisterHandler.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\RegisterHandler.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\RegisterHandler.h -o release\moc_RegisterHandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/RegisterHandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_RegisterHandler.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\RegisterHandler.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\RegisterHandler.h -o debug\moc_RegisterHandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/RegisterHandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_RegisterHandler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\ResourceItem.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\ResourceItem.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\ResourceItem.h -o release\moc_ResourceItem.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/ResourceItem.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_ResourceItem.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\ResourceItem.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\ResourceItem.h -o debug\moc_ResourceItem.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/ResourceItem.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_ResourceItem.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\ResourceModel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\ResourceModel.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\ResourceModel.h -o release\moc_ResourceModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/ResourceModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_ResourceModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\ResourceModel.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\ResourceModel.h -o debug\moc_ResourceModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/ResourceModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_ResourceModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\RpcServer.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\RpcServer.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\RpcServer.h -o release\moc_RpcServer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/RpcServer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_RpcServer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\RpcServer.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\RpcServer.h -o debug\moc_RpcServer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/RpcServer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_RpcServer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\Setting.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\Setting.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\Setting.h -o release\moc_Setting.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/Setting.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_Setting.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\Setting.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\Setting.h -o debug\moc_Setting.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/Setting.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_Setting.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\SingleApplication.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\SingleApplication.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\SingleApplication.h -o release\moc_SingleApplication.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/SingleApplication.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_SingleApplication.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\SingleApplication.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\SingleApplication.h -o debug\moc_SingleApplication.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/SingleApplication.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_SingleApplication.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\SteamModel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\SteamModel.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\SteamModel.h -o release\moc_SteamModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/SteamModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_SteamModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\SteamModel.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\SteamModel.h -o debug\moc_SteamModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/SteamModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_SteamModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="PiLog\StringUniversal.h" />
+    <CustomBuild Include="src\VersionModel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\VersionModel.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\VersionModel.h -o release\moc_VersionModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/VersionModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_VersionModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\VersionModel.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\VersionModel.h -o debug\moc_VersionModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/VersionModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_VersionModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="PiLog\WinCommon.h" />
+    <ClInclude Include="quazip\crypt.h" />
+    <CustomBuild Include="src\diagnoseHandler.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\diagnoseHandler.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\diagnoseHandler.h -o release\moc_diagnoseHandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/diagnoseHandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_diagnoseHandler.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\diagnoseHandler.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\diagnoseHandler.h -o debug\moc_diagnoseHandler.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/diagnoseHandler.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_diagnoseHandler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hwObject.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hwObject.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\hwObject.h -o release\moc_hwObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hwObject.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hwObject.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hwObject.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\hwObject.h -o debug\moc_hwObject.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hwObject.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hwObject.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quazip\ioapi.h" />
+    <ClInclude Include="src\jsonhandler.h" />
+    <ClInclude Include="piSvc\piSvcCAPI.h" />
+    <ClInclude Include="piSvc\piSvcCapability.h" />
+    <ClInclude Include="piSvc\piSvcDesc.h" />
+    <ClInclude Include="piSvc\piSvcType.h" />
+    <CustomBuild Include="src\piservice.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\piservice.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\piservice.h -o release\moc_piservice.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/piservice.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_piservice.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\piservice.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\piservice.h -o debug\moc_piservice.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/piservice.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_piservice.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quazip\quaadler32.h" />
+    <ClInclude Include="quazip\quachecksum32.h" />
+    <ClInclude Include="quazip\quacrc32.h" />
+    <CustomBuild Include="quazip\quagzipfile.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">quazip\quagzipfile.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quagzipfile.h -o release\moc_quagzipfile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC quazip/quagzipfile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_quagzipfile.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">quazip\quagzipfile.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quagzipfile.h -o debug\moc_quagzipfile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC quazip/quagzipfile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_quagzipfile.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="quazip\quaziodevice.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">quazip\quaziodevice.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quaziodevice.h -o release\moc_quaziodevice.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC quazip/quaziodevice.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_quaziodevice.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">quazip\quaziodevice.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quaziodevice.h -o debug\moc_quaziodevice.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC quazip/quaziodevice.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_quaziodevice.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quazip\quazip.h" />
+    <ClInclude Include="quazip\quazip_global.h" />
+    <ClInclude Include="quazip\quazipdir.h" />
+    <CustomBuild Include="quazip\quazipfile.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">quazip\quazipfile.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quazipfile.h -o release\moc_quazipfile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC quazip/quazipfile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_quazipfile.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">quazip\quazipfile.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; quazip\quazipfile.h -o debug\moc_quazipfile.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC quazip/quazipfile.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_quazipfile.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quazip\quazipfileinfo.h" />
+    <ClInclude Include="quazip\quazipnewinfo.h" />
+    <ClInclude Include="quazip\unzip.h" />
+    <CustomBuild Include="src\versioncontrol.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\versioncontrol.h;release\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\versioncontrol.h -o release\moc_versioncontrol.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/versioncontrol.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_versioncontrol.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\versioncontrol.h;debug\moc_predefs.h;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IG:/complile_for_pitool/piplay_tool_simple/PiTool -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQuick -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebSockets -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -ID:/Tools/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt&quot; src\versioncontrol.h -o debug\moc_versioncontrol.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/versioncontrol.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_versioncontrol.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quazip\zconf.h" />
+    <ClInclude Include="quazip\zip.h" />
+    <ClInclude Include="quazip\zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_CustomTrayicon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_CustomTrayicon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_DownloadFile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DownloadFile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineItem.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineItem.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineRequest.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineRequest.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_RegisterHandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_RegisterHandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_ResourceItem.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ResourceItem.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_ResourceModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ResourceModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_RpcServer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_RpcServer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_Setting.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_Setting.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_SingleApplication.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_SingleApplication.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_SteamModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_SteamModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_VersionModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_VersionModel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_diagnoseHandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_diagnoseHandler.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hwObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hwObject.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_piservice.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_piservice.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxD:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxD:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_quagzipfile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_quagzipfile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_quaziodevice.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_quaziodevice.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_quazipfile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_quazipfile.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_versioncontrol.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_versioncontrol.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_icon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_icon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qml.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qml.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pitool_cn.ts" />
+    <None Include="pitool_en.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qml\CommonDownload.qml" />
+    <None Include="qml\ConnectController.qml" />
+    <None Include="qml\ConnectControllerState.qml" />
+    <None Include="qml\ConnectDevice.qml" />
+    <None Include="qml\ConnectDialog.qml" />
+    <None Include="qml\ConnectModeSwicth.qml" />
+    <None Include="qml\ConnectModeSwitchWait.qml" />
+    <None Include="qml\ConnectNoloSetting.qml" />
+    <None Include="qml\ConnectStatusHdmi.qml" />
+    <None Include="qml\ConnectStatusUsb.qml" />
+    <None Include="qml\ConnectUI.qml" />
+    <None Include="qml\DfuUpgradePrompt.qml" />
+    <None Include="qml\Diagnose.qml" />
+    <None Include="qml\DiagnoseAll.qml" />
+    <None Include="qml\DiagnoseAllWait.qml" />
+    <None Include="qml\DiagnoseWait.qml" />
+    <None Include="qml\DownloadButton.qml" />
+    <None Include="qml\DownloadingResource.qml" />
+    <None Include="qml\ExchangeCodeDialog.qml" />
+    <None Include="qml\ImageButton.qml" />
+    <None Include="qml\ImageButton2.qml" />
+    <None Include="qml\LibraryDialog.qml" />
+    <None Include="qml\LibraryList.qml" />
+    <None Include="qml\LibraryListItem.qml" />
+    <None Include="qml\LibraryMore.qml" />
+    <None Include="qml\LoadingError.qml" />
+    <None Include="qml\MyAlertPopup.qml" />
+    <None Include="qml\MyAlertPopup2.qml" />
+    <None Include="qml\MyCheckBox.qml" />
+    <None Include="qml\MyComboBox.qml" />
+    <None Include="qml\MyConfirmDialog.qml" />
+    <None Include="qml\MyDialog.qml" />
+    <None Include="qml\MyDialog2.qml" />
+    <None Include="qml\MyExclamatoryMark.qml" />
+    <None Include="qml\MyImage.qml" />
+    <None Include="qml\MyLabel.qml" />
+    <None Include="qml\MyLink.qml" />
+    <None Include="qml\MyListView.qml" />
+    <None Include="qml\MyLocationDialog.qml" />
+    <None Include="qml\MyMessageDialog.qml" />
+    <None Include="qml\MyMouseArea.qml" />
+    <None Include="qml\MyProgressBar.qml" />
+    <None Include="qml\MyScrollView.qml" />
+    <None Include="qml\MySlider.qml" />
+    <None Include="qml\MyStackView.qml" />
+    <None Include="qml\MySteamButton.qml" />
+    <None Include="qml\MyTabButton.qml" />
+    <None Include="qml\MyText.qml" />
+    <None Include="qml\MyTextField.qml" />
+    <None Include="qml\MyTrayIcon.qml" />
+    <None Include="qml\MyWebView.qml" />
+    <None Include="qml\PairController.qml" />
+    <None Include="qml\PairControllerFailed.qml" />
+    <None Include="qml\PairControllerSuccess.qml" />
+    <None Include="qml\PairControllerUsing.qml" />
+    <None Include="qml\PairControllerWait.qml" />
+    <None Include="resource\PiPlay_logo.png" />
+    <None Include="QtString.txt" />
+    <None Include="qml\RedPoint.qml" />
+    <None Include="qml\RoomSettingCalibration.qml" />
+    <None Include="qml\RoomSettingCompleted.qml" />
+    <None Include="qml\RoomSettingGroundHeight.qml" />
+    <None Include="qml\RoomSettingPositioning.qml" />
+    <None Include="qml\RoomSettingStart.qml" />
+    <None Include="qml\SettingBrainwarp.qml" />
+    <None Include="qml\SettingDialog.qml" />
+    <None Include="qml\SettingGeneral.qml" />
+    <None Include="qml\SettingHelp.qml" />
+    <None Include="qml\SettingHelpAbout.qml" />
+    <None Include="qml\SettingHelpDiagnose.qml" />
+    <None Include="qml\SettingHelpFeedback.qml" />
+    <None Include="qml\SettingHmd.qml" />
+    <None Include="qml\SettingMagnetCalibrate.qml" />
+    <None Include="qml\SettingPrivacy.qml" />
+    <None Include="qml\SettingSpaceCalibrate.qml" />
+    <None Include="qml\SettingUI.qml" />
+    <None Include="qml\SteamItem.qml" />
+    <None Include="qml\SwitchButton.qml" />
+    <None Include="qml\TextButton.qml" />
+    <None Include="qml\VersionChecking.qml" />
+    <None Include="qml\VersionChecking_DFU.qml" />
+    <None Include="qml\VersionDownload.qml" />
+    <None Include="qml\VersionUpgradeConfirm.qml" />
+    <None Include="qml\VersionUpgradePrompt.qml" />
+    <None Include="qml\VersionUpgrading_DFU.qml" />
+    <None Include="resource\abnotmal-display.jpg" />
+    <None Include="resource\back-d&amp;c.png" />
+    <None Include="resource\back-n.png" />
+    <None Include="resource\base_status_off.png" />
+    <None Include="resource\base_status_ready.png" />
+    <None Include="resource\battery_empty.png" />
+    <None Include="resource\checkbox_checked.png" />
+    <None Include="resource\checkbox_unchecked.png" />
+    <None Include="resource\config-n.png" />
+    <None Include="resource\controller_general.png" />
+    <None Include="resource\controller_nolo.png" />
+    <None Include="resource\controller_status_off.png" />
+    <None Include="resource\controller_status_ready.png" />
+    <None Include="resource\controller_status_ready_low.png" />
+    <None Include="cpu_ladder.txt" />
+    <None Include="resource\delete-n.png" />
+    <None Include="resource\disconnect.png" />
+    <None Include="resource\face_not_coincide.jpg" />
+    <None Include="resource\front-d&amp;c.png" />
+    <None Include="resource\front-n.png" />
+    <None Include="resource\game_default.png" />
+    <None Include="gpu_ladder.txt" />
+    <None Include="icon.ico" />
+    <None Include="resource\icon.png" />
+    <CustomBuild Include="icon.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">icon.qrc;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;icon.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name icon icon.qrc -o release\qrc_icon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC icon.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_icon.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">icon.qrc;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;icon.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name icon icon.qrc -o debug\qrc_icon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC icon.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_icon.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="resource\icon_small.png" />
+    <None Include="resource\key.png" />
+    <None Include="resource\link-1.png" />
+    <None Include="resource\link-2.png" />
+    <None Include="resource\link-3.png" />
+    <None Include="resource\link-n.png" />
+    <None Include="resource\loading.gif" />
+    <None Include="resource\lock1.png" />
+    <None Include="resource\lock2.png" />
+    <None Include="resource\login-n.png" />
+    <None Include="resource\magnet-calibrate.png" />
+    <None Include="qml\main_tools.qml" />
+    <None Include="resource\max-n.png" />
+    <None Include="resource\min-n.png" />
+    <None Include="resource\moren.png" />
+    <None Include="resource\none.png" />
+    <None Include="resource\normal-n.png" />
+    <None Include="resource\normal.jpg" />
+    <None Include="resource\pairing_buttons.png" />
+    <None Include="resource\pairing_controller.png" />
+    <None Include="resource\pause-c.png" />
+    <None Include="resource\pause-h.png" />
+    <None Include="resource\pause-n.png" />
+    <None Include="resource\pause_big.png" />
+    <None Include="performance.txt" />
+    <None Include="performance_en.txt" />
+    <None Include="resource\pi.png" />
+    <None Include="resource\pi_device_4k.png" />
+    <None Include="resource\pi_device_8k.png" />
+    <None Include="resource\pi_device_8k_leap.png" />
+    <None Include="resource\pi_device_b1.png" />
+    <None Include="resource\pi_device_off.png" />
+    <None Include="resource\pi_title.png" />
+    <None Include="pitool_cn.qm" />
+    <None Include="pitool_en.qm" />
+    <None Include="privacy.txt" />
+    <None Include="privacy_en.txt" />
+    <CustomBuild Include="qml.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">qml.qrc;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;gpu_ladder.txt;pitool_cn.qm;cpu_ladder.txt;performance.txt;qtquickcontrols2.conf;privacy.txt;performance_en.txt;privacy_en.txt;version.txt;QtString.txt;pitool_en.qm;qml\LibraryListItem.qml;qml\RoomSettingPositioning.qml;qml\RoomSettingCalibration.qml;qml\ConnectController.qml;qml\CommonDownload.qml;qml\SettingDialog.qml;qml\RoomSettingStart.qml;qml\MyImage.qml;qml\MyProgressBar.qml;qml\MyMessageDialog.qml;qml\SettingPrivacy.qml;qml\PairControllerWait.qml;qml\PairControllerUsing.qml;qml\VersionDownload.qml;qml\MyStackView.qml;qml\PairControllerSuccess.qml;qml\MySlider.qml;qml\SettingHmd.qml;qml\VersionChecking.qml;qml\DownloadButton.qml;qml\MyLink.qml;qml\LibraryMore.qml;qml\DfuUpgradePrompt.qml;qml\SettingHelp.qml;qml\MyTextField.qml;qml\ExchangeCodeDialog.qml;qml\ConnectStatusUsb.qml;qml\VersionUpgradeConfirm.qml;qml\MyAlertPopup2.qml;qml\ConnectModeSwicth.qml;qml\TextButton.qml;qml\MyMouseArea.qml;qml\RedPoint.qml;qml\LoadingError.qml;qml\ConnectDevice.qml;qml\MyListView.qml;qml\MyScrollView.qml;qml\MyText.qml;qml\MyAlertPopup.qml;qml\MyTabButton.qml;qml\MyComboBox.qml;qml\SwitchButton.qml;qml\MyLocationDialog.qml;qml\ImageButton.qml;qml\SettingGeneral.qml;qml\MyWebView.qml;qml\SettingBrainwarp.qml;qml\PairController.qml;qml\SettingSpaceCalibrate.qml;qml\ConnectControllerState.qml;qml\MyExclamatoryMark.qml;qml\SettingUI.qml;qml\MyDialog2.qml;qml\DiagnoseWait.qml;qml\LibraryList.qml;qml\Diagnose.qml;qml\MyTrayIcon.qml;qml\DiagnoseAll.qml;qml\ConnectStatusHdmi.qml;qml\ConnectNoloSetting.qml;qml\MyLabel.qml;qml\DiagnoseAllWait.qml;qml\ConnectDialog.qml;qml\LibraryDialog.qml;qml\ConnectUI.qml;qml\PairControllerFailed.qml;qml\VersionUpgrading_DFU.qml;qml\ImageButton2.qml;qml\VersionChecking_DFU.qml;qml\RoomSettingCompleted.qml;qml\main_tools.qml;qml\SteamItem.qml;qml\MyCheckBox.qml;qml\RoomSettingGroundHeight.qml;qml\SettingHelpFeedback.qml;qml\SettingHelpAbout.qml;qml\VersionUpgradePrompt.qml;qml\DownloadingResource.qml;qml\ConnectModeSwitchWait.qml;qml\MyDialog.qml;qml\MyConfirmDialog.qml;qml\SettingHelpDiagnose.qml;qml\SettingMagnetCalibrate.qml;qml\MySteamButton.qml;resource\tracker_nolo.png;resource\battery_empty.png;resource\controller_status_off.png;resource\refresh-n.png;resource\moren.png;resource\pi_device_8k.png;resource\link-1.png;resource\normal-n.png;resource\trayicon-close.png;resource\room_step1.png;resource\icon_small.png;resource\face_not_coincide.jpg;resource\base_status_ready.png;resource\splash_02.png;resource\checkbox_unchecked.png;resource\version-checking.png;resource\back-d&amp;c.png;resource\start-n.png;resource\refresh-black.png;resource\video_default.png;resource\login-n.png;resource\disconnect.png;resource\refresh-d.png;resource\lock2.png;resource\front-d&amp;c.png;resource\magnet-calibrate.png;resource\pairing_controller.png;resource\controller_nolo.png;resource\front-n.png;resource\room_step0.png;resource\pause-n.png;resource\splash_01.png;resource\config-n.png;resource\shoubin-n.png;resource\back-n.png;resource\pi_device_off.png;resource\pi.png;resource\lock1.png;resource\pi_device_8k_leap.png;resource\pi_device_4k.png;resource\start-h.png;resource\search-n.png;resource\PiPlay_logo.png;resource\loading.gif;resource\tag.png;resource\key.png;resource\game_default.png;resource\select-n.png;resource\controller_status_ready.png;resource\pairing_buttons.png;resource\link-n.png;resource\start_big.png;resource\steam.png;resource\start-c.png;resource\link-3.png;resource\delete-n.png;resource\checkbox_checked.png;resource\pause-h.png;resource\room_step3.png;resource\abnotmal-display.jpg;resource\pi_title.png;resource\controller_general.png;resource\tracker_general.png;resource\quit-n.png;resource\none.png;resource\tray.png;resource\max-n.png;resource\min-n.png;resource\pi_device_b1.png;resource\pause-c.png;resource\weixin.jpg;resource\pause_big.png;resource\icon.png;resource\normal.jpg;resource\link-2.png;resource\base_status_off.png;resource\controller_status_ready_low.png;resource\room_ok.png;resource\select-h.png;resource\room_step2.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name qml qml.qrc -o release\qrc_qml.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC qml.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">qml.qrc;D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;gpu_ladder.txt;pitool_cn.qm;cpu_ladder.txt;performance.txt;qtquickcontrols2.conf;privacy.txt;performance_en.txt;privacy_en.txt;version.txt;QtString.txt;pitool_en.qm;qml\LibraryListItem.qml;qml\RoomSettingPositioning.qml;qml\RoomSettingCalibration.qml;qml\ConnectController.qml;qml\CommonDownload.qml;qml\SettingDialog.qml;qml\RoomSettingStart.qml;qml\MyImage.qml;qml\MyProgressBar.qml;qml\MyMessageDialog.qml;qml\SettingPrivacy.qml;qml\PairControllerWait.qml;qml\PairControllerUsing.qml;qml\VersionDownload.qml;qml\MyStackView.qml;qml\PairControllerSuccess.qml;qml\MySlider.qml;qml\SettingHmd.qml;qml\VersionChecking.qml;qml\DownloadButton.qml;qml\MyLink.qml;qml\LibraryMore.qml;qml\DfuUpgradePrompt.qml;qml\SettingHelp.qml;qml\MyTextField.qml;qml\ExchangeCodeDialog.qml;qml\ConnectStatusUsb.qml;qml\VersionUpgradeConfirm.qml;qml\MyAlertPopup2.qml;qml\ConnectModeSwicth.qml;qml\TextButton.qml;qml\MyMouseArea.qml;qml\RedPoint.qml;qml\LoadingError.qml;qml\ConnectDevice.qml;qml\MyListView.qml;qml\MyScrollView.qml;qml\MyText.qml;qml\MyAlertPopup.qml;qml\MyTabButton.qml;qml\MyComboBox.qml;qml\SwitchButton.qml;qml\MyLocationDialog.qml;qml\ImageButton.qml;qml\SettingGeneral.qml;qml\MyWebView.qml;qml\SettingBrainwarp.qml;qml\PairController.qml;qml\SettingSpaceCalibrate.qml;qml\ConnectControllerState.qml;qml\MyExclamatoryMark.qml;qml\SettingUI.qml;qml\MyDialog2.qml;qml\DiagnoseWait.qml;qml\LibraryList.qml;qml\Diagnose.qml;qml\MyTrayIcon.qml;qml\DiagnoseAll.qml;qml\ConnectStatusHdmi.qml;qml\ConnectNoloSetting.qml;qml\MyLabel.qml;qml\DiagnoseAllWait.qml;qml\ConnectDialog.qml;qml\LibraryDialog.qml;qml\ConnectUI.qml;qml\PairControllerFailed.qml;qml\VersionUpgrading_DFU.qml;qml\ImageButton2.qml;qml\VersionChecking_DFU.qml;qml\RoomSettingCompleted.qml;qml\main_tools.qml;qml\SteamItem.qml;qml\MyCheckBox.qml;qml\RoomSettingGroundHeight.qml;qml\SettingHelpFeedback.qml;qml\SettingHelpAbout.qml;qml\VersionUpgradePrompt.qml;qml\DownloadingResource.qml;qml\ConnectModeSwitchWait.qml;qml\MyDialog.qml;qml\MyConfirmDialog.qml;qml\SettingHelpDiagnose.qml;qml\SettingMagnetCalibrate.qml;qml\MySteamButton.qml;resource\tracker_nolo.png;resource\battery_empty.png;resource\controller_status_off.png;resource\refresh-n.png;resource\moren.png;resource\pi_device_8k.png;resource\link-1.png;resource\normal-n.png;resource\trayicon-close.png;resource\room_step1.png;resource\icon_small.png;resource\face_not_coincide.jpg;resource\base_status_ready.png;resource\splash_02.png;resource\checkbox_unchecked.png;resource\version-checking.png;resource\back-d&amp;c.png;resource\start-n.png;resource\refresh-black.png;resource\video_default.png;resource\login-n.png;resource\disconnect.png;resource\refresh-d.png;resource\lock2.png;resource\front-d&amp;c.png;resource\magnet-calibrate.png;resource\pairing_controller.png;resource\controller_nolo.png;resource\front-n.png;resource\room_step0.png;resource\pause-n.png;resource\splash_01.png;resource\config-n.png;resource\shoubin-n.png;resource\back-n.png;resource\pi_device_off.png;resource\pi.png;resource\lock1.png;resource\pi_device_8k_leap.png;resource\pi_device_4k.png;resource\start-h.png;resource\search-n.png;resource\PiPlay_logo.png;resource\loading.gif;resource\tag.png;resource\key.png;resource\game_default.png;resource\select-n.png;resource\controller_status_ready.png;resource\pairing_buttons.png;resource\link-n.png;resource\start_big.png;resource\steam.png;resource\start-c.png;resource\link-3.png;resource\delete-n.png;resource\checkbox_checked.png;resource\pause-h.png;resource\room_step3.png;resource\abnotmal-display.jpg;resource\pi_title.png;resource\controller_general.png;resource\tracker_general.png;resource\quit-n.png;resource\none.png;resource\tray.png;resource\max-n.png;resource\min-n.png;resource\pi_device_b1.png;resource\pause-c.png;resource\weixin.jpg;resource\pause_big.png;resource\icon.png;resource\normal.jpg;resource\link-2.png;resource\base_status_off.png;resource\controller_status_ready_low.png;resource\room_ok.png;resource\select-h.png;resource\room_step2.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Tools\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name qml qml.qrc -o debug\qrc_qml.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC qml.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="qtquickcontrols2.conf" />
+    <None Include="resource\quit-n.png" />
+    <None Include="resource\refresh-black.png" />
+    <None Include="resource\refresh-d.png" />
+    <None Include="resource\refresh-n.png" />
+    <None Include="resource\room_ok.png" />
+    <None Include="resource\room_step0.png" />
+    <None Include="resource\room_step1.png" />
+    <None Include="resource\room_step2.png" />
+    <None Include="resource\room_step3.png" />
+    <None Include="resource\search-n.png" />
+    <None Include="resource\select-h.png" />
+    <None Include="resource\select-n.png" />
+    <None Include="resource\shoubin-n.png" />
+    <None Include="resource\splash_01.png" />
+    <None Include="resource\splash_02.png" />
+    <None Include="resource\start-c.png" />
+    <None Include="resource\start-h.png" />
+    <None Include="resource\start-n.png" />
+    <None Include="resource\start_big.png" />
+    <None Include="resource\steam.png" />
+    <None Include="resource\tag.png" />
+    <None Include="resource\tracker_general.png" />
+    <None Include="resource\tracker_nolo.png" />
+    <None Include="resource\tray.png" />
+    <None Include="resource\trayicon-close.png" />
+    <None Include="resource\version-checking.png" />
+    <None Include="version.txt" />
+    <None Include="resource\video_default.png" />
+    <None Include="resource\weixin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

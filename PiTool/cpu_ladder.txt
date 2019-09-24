@@ -1,0 +1,8 @@
+Ryzen 7,
+RyZen 5,
+core i7,
+core i5,
+bulldozer,
+athlon x6,
+core i3,
+athlon x4

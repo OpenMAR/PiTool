@@ -1,0 +1,50 @@
+﻿{
+	"performance":{
+                "cpu":{
+                        "ladder":":/cpu_ladder.txt",
+                        "level":[
+				{"min":"","max":"core i3","prompt":"性能欠佳，推荐i5及以上性能"},
+                                {"min":"core i3","max":"core i5","prompt":"性能一般，推荐i5及以上性能"},
+                                {"min":"core i5","max":"core i7","prompt":"可以使用"},
+				{"min":"core i7","max":"","prompt":"可以使用"}
+			]
+		},
+		"gpu":{
+                        "ladder":":/gpu_ladder.txt",
+			"level":[
+				{"min":"","max":"gtx 750","prompt":"性能欠佳，推荐GTX1050及以上性能，建议更换显卡"},
+				{"min":"gtx 750","max":"gtx 1050","prompt":"性能一般，推荐GTX1050及以上性能，建议更换显卡"},
+				{"min":"gtx 1050","max":"gtx 1060","prompt":"可以使用"},
+				{"min":"gtx 1060","max":"","prompt":"可以使用"}
+			]
+		},
+		"os":{
+			"prompt":"请使用Windows 7 SP1及以上64位系统，否则无法安装"
+		},
+		"driver":{
+			"amd":21,
+			"nvidia":358,
+                        "prompt":"您的显卡驱动版本过低，请至<br><a href='%1'>官网</a><br>更新显卡驱动，以免影响正常使用",
+                        "prompt_i":"集成显卡，如您电脑存在独立显卡，请检查更新显卡驱动",
+                        "prompt_ok":"您可至<a href='%1'>官网</a>更新您的电脑显卡驱动，以免影响正常使用",
+                        "url_n":"http://www.nvidia.cn/Download/index.aspx?lang=cn",
+                        "url_a":"http://support.amd.com/zh-cn/download"
+                        },
+		"prompt":{
+			"conclusion":[
+				{"prompt":"电脑配置较低，无法完美体验虚拟现实"},
+				{"prompt":"电脑性能一般，无法完美体验虚拟现实"},
+				{"prompt":"电脑已达推荐配置"},
+				{"prompt":"电脑性能非常棒"}
+			],
+			"subconclusion":[
+				{"prompt":"如玩游戏，可能不畅，可观看2D、3D影视"},
+				{"prompt":"可观看普通影片，大型游戏等不足以运行"},
+				{"prompt":"尽情享受游戏和影视带来的快乐吧"},
+				{"prompt":"尽情享受游戏和影视带来的快乐吧"}
+			]
+                },
+                "usb_prompt":"1、请尝试升级显卡驱动 %1<br/><br/>2、请尝试重新拔插连接线",
+                "hdmi_prompt":"1、请尝试重新拔插连接线；<br/><br/>请确认显卡驱动是否缺失或版本较老（控制面板-程序和功能），可至官网下载更新%1<br/><br/>"
+        }
+}

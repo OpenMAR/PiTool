@@ -1,0 +1,50 @@
+﻿{
+	"performance":{
+                "cpu":{
+                        "ladder":":/cpu_ladder.txt",
+                        "level":[
+                                {"min":"","max":"core i3","prompt":"Intel I5 or above is recommended for the best experience"},
+                                {"min":"core i3","max":"core i5","prompt":"Intel I5 or above is recommended for the best experience"},
+                                {"min":"core i5","max":"core i7","prompt":"Good enough"},
+                                {"min":"core i7","max":"","prompt":"Good enough"}
+			]
+		},
+                "gpu":{
+                        "ladder":":/gpu_ladder.txt",
+			"level":[
+				{"min":"","max":"gtx 750","prompt":"GTX1050/AMD R9 280 or above is recommended for the best experience"},
+				{"min":"gtx 750","max":"gtx 1050","prompt":"GTX1050/AMD R9 280 or above is recommended for the best experience"},
+                                {"min":"gtx 1050","max":"gtx 1060","prompt":"Good enough"},
+                                {"min":"gtx 1060","max":"","prompt":"Good enough"}
+			]
+		},
+		"os":{
+			"prompt":"Please install Piplay driver in Windows 7 SP1 64-bit operating system and above."
+		},
+		"driver":{
+			"amd":21,
+			"nvidia":358,
+			"prompt":"The current version of the graphic card driver is outdated. For best experience, please <a href='%1'>Official Site</a> update it now.",
+			"prompt_i":"Integrated graphics.If your computer has discrete graphics, please check driver of graphics card.",
+			"prompt_ok":"You can visit NVIDIA or AMD website <a href='%1'>Official Site</a> to update the driver of graphic card. ",
+			"url_n":"http://www.nvidia.cn/Download/index.aspx?lang=cn",
+			"url_a":"http://support.amd.com/zh-cn/download"
+		},
+		"prompt":{
+			"conclusion":[
+                                {"prompt":"You PC is not perfect for experiencing virtual reality"},
+				{"prompt":"You PC is not perfect for experiencing virtual reality"},
+				{"prompt":"Congrats! Your PC configuration meets the requirements"},
+				{"prompt":"Congrats! Your PC configuration looks great"}
+			],
+			"subconclusion":[
+                                {"prompt":"Can watch 2D&3D Video,Not enough to play game"},
+				{"prompt":"your PC is good for most movies, but not all the games"},
+				{"prompt":"Lay back and enjoy videos and games! "},
+				{"prompt":"Lay back and enjoy videos and games! "}
+			]
+                },
+                "usb_prompt":"1、Try to upgrade driver of graphics card %1<br/><br/>2、Try to replug HDMI & USB cable",
+                "hdmi_prompt":"1、Try to replug HDMI & USB cable<br/><br/>2、Please check the integrity and version of graphics card driver, upgrade it. %1<br/><br/> "
+        }
+}

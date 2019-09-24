@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CustomTrayicon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DownloadFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\JlCompress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OnlineItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OnlineModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OnlineRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RegisterHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RpcServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SingleApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SteamModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VersionModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\diagnoseHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hwObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jsonhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\piservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\qioapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quaadler32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quacrc32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quagzipfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quaziodevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quazip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quazipdir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quazipfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quazipfileinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\quazipnewinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\unzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\versioncontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quazip\zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\CustomTrayicon.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\DownloadFile.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="PiLog\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\JlCompress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PiLog\JsonHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\OnlineItem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\OnlineModel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\OnlineRequest.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\RegisterHandler.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ResourceItem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ResourceModel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\RpcServer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Setting.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\SingleApplication.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\SteamModel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="PiLog\StringUniversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\VersionModel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="PiLog\WinCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\crypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\diagnoseHandler.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hwObject.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="quazip\ioapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jsonhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piSvc\piSvcCAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piSvc\piSvcCapability.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piSvc\piSvcDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piSvc\piSvcType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\piservice.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="quazip\quaadler32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\quachecksum32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\quacrc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="quazip\quagzipfile.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="quazip\quaziodevice.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="quazip\quazip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\quazip_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\quazipdir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="quazip\quazipfile.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="quazip\quazipfileinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\quazipnewinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\unzip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\versioncontrol.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="quazip\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\zip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quazip\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_CustomTrayicon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_CustomTrayicon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_DownloadFile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_DownloadFile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineItem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineItem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_OnlineRequest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_OnlineRequest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_RegisterHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_RegisterHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_ResourceItem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_ResourceItem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_ResourceModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_ResourceModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_RpcServer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_RpcServer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_Setting.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_Setting.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_SingleApplication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_SingleApplication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_SteamModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_SteamModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_VersionModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_VersionModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_diagnoseHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_diagnoseHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hwObject.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hwObject.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_piservice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_piservice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_quagzipfile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_quagzipfile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_quaziodevice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_quaziodevice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_quazipfile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_quazipfile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_versioncontrol.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_versioncontrol.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_icon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_icon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pitool_cn.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="pitool_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qml\CommonDownload.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectController.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectControllerState.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectDevice.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectModeSwicth.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectModeSwitchWait.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectNoloSetting.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectStatusHdmi.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectStatusUsb.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ConnectUI.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DfuUpgradePrompt.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\Diagnose.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DiagnoseAll.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DiagnoseAllWait.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DiagnoseWait.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DownloadButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\DownloadingResource.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ExchangeCodeDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ImageButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\ImageButton2.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\LibraryDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\LibraryList.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\LibraryListItem.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\LibraryMore.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\LoadingError.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyAlertPopup.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyAlertPopup2.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyCheckBox.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyComboBox.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyConfirmDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyDialog2.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyExclamatoryMark.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyImage.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyLabel.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyLink.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyListView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyLocationDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyMessageDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyMouseArea.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyProgressBar.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyScrollView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MySlider.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyStackView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MySteamButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyTabButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyText.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyTextField.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyTrayIcon.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\MyWebView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\PairController.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\PairControllerFailed.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\PairControllerSuccess.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\PairControllerUsing.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\PairControllerWait.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\PiPlay_logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="QtString.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RedPoint.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RoomSettingCalibration.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RoomSettingCompleted.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RoomSettingGroundHeight.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RoomSettingPositioning.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\RoomSettingStart.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingBrainwarp.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingDialog.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingGeneral.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingHelp.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingHelpAbout.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingHelpDiagnose.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingHelpFeedback.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingHmd.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingMagnetCalibrate.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingPrivacy.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingSpaceCalibrate.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SettingUI.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SteamItem.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\SwitchButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\TextButton.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionChecking.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionChecking_DFU.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionDownload.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionUpgradeConfirm.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionUpgradePrompt.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\VersionUpgrading_DFU.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\abnotmal-display.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\back-d&c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\back-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\base_status_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\base_status_ready.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\battery_empty.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\checkbox_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\checkbox_unchecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\config-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\controller_general.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\controller_nolo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\controller_status_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\controller_status_ready.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\controller_status_ready_low.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cpu_ladder.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\delete-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\disconnect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\face_not_coincide.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\front-d&c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\front-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\game_default.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gpu_ladder.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="icon.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="resource\icon_small.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\key.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\link-1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\link-2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\link-3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\link-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\loading.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\lock1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\lock2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\login-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\magnet-calibrate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="qml\main_tools.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\max-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\min-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\moren.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\none.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\normal-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\normal.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pairing_buttons.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pairing_controller.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pause-c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pause-h.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pause-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pause_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="performance.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="performance_en.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_device_4k.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_device_8k.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_device_8k_leap.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_device_b1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_device_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\pi_title.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pitool_cn.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pitool_en.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="privacy.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="privacy_en.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="qml.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="qtquickcontrols2.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\quit-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\refresh-black.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\refresh-d.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\refresh-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\room_ok.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\room_step0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\room_step1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\room_step2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\room_step3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\search-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\select-h.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\select-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\shoubin-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\splash_01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\splash_02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\start-c.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\start-h.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\start-n.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\start_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\steam.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\tag.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\tracker_general.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\tracker_nolo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\tray.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\trayicon-close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\version-checking.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="version.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\video_default.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\weixin.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

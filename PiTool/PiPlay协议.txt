@@ -1,0 +1,110 @@
+1.  基本协议
+采用WebSocket协议，链接地址为：ws://localhost:17926/
+数据传输采用json格式
+输入基本格式为：
+{"process"："process","param":{"param1":"param1","param2":"param2",...,"paramn":"paramn"}
+输出基本格式为:
+{"callback":"process","result":"result","values":{"value1":"value1",...,"valuen":"valuen}}
+通知消息格式为：
+{"process"："process","param":{"param1":"param1","param2":"param2",...,"paramn":"paramn"}
+
+2. 函数说明
+2.1  下载资源
+输入:
+ {"process"："downloadResource","param":{"id":"","third_id":"","type":"video","sub_type":"2d","download_url":"http://.../..","image_url":"http://.../..","title":"title","desc":"desc"}}
+id:资源ID
+third_id: 第三方id，可为空
+type：资源类型（game/video/picture)
+sub_type:子类型(pimax/steam/oculus, 2D/3D/view)
+输出:
+{"callback":"downloadResource","result":true,"values":{"error":"value1"}}
+result: true:开始下载,false:下载失败
+error:  失败原因,仅当result=false时有效
+
+2.2 删除资源
+输入: {"process"："deleteResource","param":{"id":"","delete_file":false}}
+id: 资源ID
+delete_file: 是否删除文件,缺省为false
+输出:
+{"callback":"deleteResource","result":true,"values":{"error":"cause"}}
+result: true:删除成功,false:删除失败
+error:  失败原因,仅当result=false时有效
+
+2.3 开始下载
+输入: {"process"："startDownload","param":{"id":""}}
+id: 资源ID
+输出:
+{"callback":"startDownload","result":true,"values":{"error":"cause"}}
+result: true:开始下载,false:下载失败
+error:  失败原因,仅当result=false时有效
+
+2.4 停止下载
+输入: {"process"："stopDownload","param":{"id":""}}
+id: 资源ID
+输出:
+{"callback":"stopDownload","result":true,"values":{"error":"cause"}}
+result: true:停止下载,false:下载失败
+error:  失败原因,仅当result=false时有效
+
+2.5 打开游戏 
+输入: {"process"："playGame","param":{"id":""}}
+id: 游戏ID
+输出:
+{"callback":"playGame","result":true,"values":{"error":"cause"}}
+result: true:启动游戏成功,false:启动失败
+error:  失败原因,仅当result=false时有效
+
+2.6 播放视频
+输入: {"process"："playVideo","param":{"id":""}}
+id: 视频ID
+输出:
+{"callback":"playVideo","result":true,"values":{"error":"cause"}}
+result: true:播放视频成功,false:播放失败
+error:  失败原因,仅当result=false时有效
+
+2.7 启动外部浏览器
+输入: {"process"："openUrl","param":{"url":""}}
+url: url链接
+输出:
+{"callback":"playVideo","result":true,"values":{"error":"cause"}}
+result: true:启动成功,false:启动失败
+error:  失败原因,仅当result=false时有效
+
+2.8 获取产品状态
+输入: {"process"："getStatus","param":{"id":""}}
+id: 产品Id
+输出:
+{"callback":"getStatus","result":true,"values":{"id":"","status":2,"total_bytes":19933939,"downloaded":393939}}
+result: true:函数执行成功,false:函数执行失败
+id: 产品Id
+status：状态
+   -1：本地不存在
+   0: 已下载
+   1：准备下载
+   2：正在下载
+   3：正在安装 
+   4：已删除
+   5：下载失败
+total_bytes：文件总大小
+downloaded：已下载文件大小
+
+3.通知消息
+3.1 资源被删除
+{"process"："deleteResource","param":{"id":""}}
+
+3.2 资源状态变化
+{"process"："statusChanged","param":{"id":"","status":2}}
+status: 状态
+   -1：本地不存在
+   0: 已下载
+   1：准备下载
+   2：正在下载
+   3：正在安装 
+   4：已删除
+   5：下载失败
+
+3.3 下载进度变化
+{"process"："progressChanged","param":{"id":"","status":2,"total_bytes":19933939,"downloaded":393939}}
+total_bytes：资源总大小
+downloaded：已下载文件大小
+

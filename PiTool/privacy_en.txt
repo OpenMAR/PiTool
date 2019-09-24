@@ -1,0 +1,80 @@
+﻿<p><b>INTRODUCTION</b></p>
+Pimax values your privacy. This Privacy Policy informs you of your choices and our practices regarding any Information you provide to us. <br/>
+The use of our services may involve the collection and use of your Information on our services . It is important for you to understand how this happens and how you may control it, so please read this Privacy Policy carefully. <br/>
+<p><b>By using our services, you agree that we may collect, use and share your Information in accordance with this Privacy Policy, as revised from time to time. </b></p>
+<p><b>1. THE INFORMATION WE COLLECT AND HOW WE COLLECT IT</b></p>
+In providing our services, we collect, store and use the following Information relating to you: <br/>
+<p><b> “Information” </b></p>
+ Personal Information and Non-Personal Information; <br/>
+<p><b>"Personal Information" </b></p>
+Any information or combination of information that relates to you, and can be used to identify you. Personal Information may include the following: <br/>
+&nbsp;&nbsp;1)information you make available to us when you open an account or use our services, such as your name, telephone number, email address and credit card details; <br/>
+&nbsp;&nbsp;2)Shared information which you make available to our services as you use them; <br/>
+&nbsp;&nbsp;3)Shared nformation that others using our services make available about you; <br/>
+&nbsp;&nbsp;4)information we collect as you use our services, such as certain Location Data, Log Data and public information. <br/>
+<p><b> “Location Data” </b></p>
+Information that we collect regarding your location, including: <br/>
+&nbsp;&nbsp;1)the location of your device when you use our services, such as from WiFi, accelerometer or other sensors in your device; <br/>
+&nbsp;&nbsp;2)the IP address of the device or internet service you use to access our services;<br/>
+&nbsp;&nbsp;3)other information made available by you or others that gives an indication as to where you are or have been located;<br/>
+<p><b> "Log Data"</b></p>
+Technical information that is automatically collected by us when you use our services, whether through the use of cookies or otherwise, including: <br/>
+&nbsp;&nbsp;1)technical information such as your mobile carrier, configuration information made available by your web browser or other programs you use to access our services, your IP address and your device's version and identification number; <br/>
+&nbsp;&nbsp;2)information about what you have searched for and looked at while using our services, such as web search terms used, profiles visited and details of other information and content accessed or requested by you in using our services; <br/>
+&nbsp;&nbsp;3)information about what apps and other software you have used and how you have used them; <br/>
+&nbsp;&nbsp;4)metadata, which means information related to items you have made available through our services. <br/>
+<p><b>2. HOW WE USE YOUR INFORMATION</b></p>
+We may use your Information for any of the following purposes: <br/>
+&nbsp;&nbsp;1)to provide our services to you; <br/>
+&nbsp;&nbsp;2)for customer service, security, fraud-detection, archival and backup purposes in connection with the provision of our services; <br/>
+&nbsp;&nbsp;3)to provide you with advertising; <br/>
+&nbsp;&nbsp;4)to better understand how you access and use our services, for the purposes of trying to improve our services and to respond to customer desires and preferences, including language and location customization, personalized help and instructions, or other responses to your and other customers’ usage of our services; <br/>
+&nbsp;&nbsp;5)to help us develop our new services and improve our existing services; <br/>
+&nbsp;&nbsp;6)to assess the effectiveness of and improve advertising and other marketing and promotional activities on or in connection with our services; <br/>
+&nbsp;&nbsp;7)for the purposes of software verification or administrative software upgrades; <br/>
+&nbsp;&nbsp;8)to allow you to participate in surveys and other activities about our products and services. <br/>
+For the purposes of seeking to provide our users with a better experience, to improve our services or otherwise where you have consented, Personal Information collected through one of our services may, subject to user privacy controls (where available), be used by our other services (including in an aggregated or individualized manner). <br/>
+For example, Personal Information collected during your use of one of our services may be used to suggest particular content that can be made available to you on another service or be used to try to present more relevant advertising to you in another service. <br/>
+<p><b>3. SHARING OF YOUR PERSONAL INFORMATION</b></p>
+Other than as permitted under this Privacy Policy or as otherwise consented to by you, we will not transfer your Personal Information to any other third parties for their processing for any purposes. <br/>
+We and our affiliate companies may share your Personal Information within our group of companies and with joint venture partners and third party service providers, contractors and agents (such as communication service providers who send emails or push notifications on our behalf, ). In addition, we may allow such third parties to collect your Personal Information across our services. In each case, we permit such sharing and/or collection for the purposes of: <br/>
+(1) providing our services to you; <br/>
+(2) assisting us in carrying out the purposes set out under the “How We Use Your Information” section above; <br/>
+(3) carrying out our obligations and enforcing our rights under this Privacy Policy; <br/>
+As we continue to develop our business, we or our affiliate companies may carry on transactions of merger, separation, acquisition, transfer of assets or related transactions such as re-organise our group structure. In these circumstances, it may be the case that your Information is transferred within our group and/or transferred to a third party who will continue to operate our services or similar services under either this Privacy Policy or a different privacy policy which will be notified to you. The party to whom your Personal Information is transferred may be located, and use your Information, outside of your jurisdiction. <br/>
+You agree that we or our affiliate companies may be required to retain, preserve or disclose your Personal Information: <br/>
+(1) in order to comply with applicable laws or regulations; <br/>
+(2) in order to comply with a court order, subpoena or other legal process; <br/>
+(3) in response to a request by a government authority, law enforcement agency or similar body (whether situated in your jurisdiction or elsewhere);  <br/>
+(4) where we believe it is reasonably necessary to comply with applicable laws or regulations. <br/>
+You also agree that we or our affiliate companies may need to disclose your Personal Information in order to enforce this Privacy Policy, protect our rights, property or safety, or the rights, property or safety of our affiliate companies or other users of our services. <br/>
+<p><b>4. INFORMATION SECURITY</b></p>
+We strive to protect personal information by taking appropriate physical, technical and organizational measures to help guard against unauthorized or unlawful access, use, processing or alteration of the personal information that we obtain from you through our Services and against any breaches or loss of such personal information. Although we take steps to use and improve various safeguards, no system or technology is completely secure. If you become aware of a technical vulnerability affecting Pimax Services, please email support@pimaxvr.com. <br/>
+Pimax Account lets you use a single user name and password to log on to PimaxSense.com and some of Pimax applications and Services. Other Pimax applications and Services require a different user name and password. Please protect your user names and passwords to help prevent anyone from accessing your accounts and your personal information. <br/>
+We are not responsible for the security of any independent third-party applications and services or the data those third-party applications and services may collect about you. Please ask those third parties how they keep your data safe. <br/>
+<p><b>5. COMMUNICATIONS FROM US</b></p>
+Newsletters and other types of communications <br/>
+When you use our services, we may use your Information to send you emails, newsletters or push notifications to your device. If you no longer wish to receive these communications, you can follow the instructions on how to unsubscribe in the emails we send to you, opting out of notifications at the device level (if available) or contacting our staff. <br/>
+Service-related announcements <br/>
+We may from time to time send you service-related announcements when we consider it necessary (such as when we temporarily suspend one of our services for maintenance). You may not opt-out of these service-related announcements, which are not promotional in nature. <br/>
+<p><b>6.EXCEPTIONS TO PRIVACY POLICY</b></p>
+Our services may include, or they may link you to, social media or other services (including websites) provided by a third party. For example: <br/>
+&nbsp;&nbsp;1)you may be able to share content on our services using services provided by third parties. The third parties who provide such services may be able to collect your Information and Personal Information (including your Log Data), and may set cookies on your computer to enable such third party services to function properly; and<br/>
+&nbsp;&nbsp;2)we may provide you with links that allow you to access third party services or websites by advertisements or otherwise within our services. <br/>
+These third party social media or other services may be hosted by the relevant third party or us. Your use of any social media or other serviced of such third party (including any Personal Information you provide to such third parties), are subject to the relevant third party’s own terms of services and its privacy policies . please review their terms carefully. <br/>
+<b>This Privacy Policy only applies to any Information collected by us, and does not apply to any services offered by or information practices of any third parties, and we bear no liability for any third party use of any Information provided by you to them. </b>
+<p><b>7. JUVENILES TO USE OUR SERVICES</b></p>
+We encourage juveniles (under 18 years old) to use our services under custody of their parents or guardian. We suggest juveniles to encourage their parents or the guardian to read the terms and conditions, and seek consents and advices of their parents or the guardian before submitting personal information. <br/>
+<p><b>8.SCOPE OF THIS PRIVACY POLICY</b></p>
+This Privacy Policy applies across all of our services. In addition, some of our services have specific privacy guidance applicable to their use. Such service-specific privacy guidances are incorporated into and form part of this Privacy Policy. If any content of such service-specific privacy guidance is different from this Privacy Policy, the service-specific privacy guidance will apply to the extent of the difference. <br/>
+This Privacy Policy is incorporated into and forms part of the “Pimax USER LICENSE AGREEMENT AND TERMS OF USE”(“TERM OF USE”)   that you have agreed to in order to use our services. Any terms used in this Privacy Policy will have the same meaning as the equivalent defined terms in the TERMS OF USE , unless otherwise defined in this Privacy Policy or the context requires otherwise. <br/>
+Please also note that this Privacy Policy does not apply to Information collected: <br/>
+(1) information collected through third party services (including any third party websites) that you may access through our services; <br/>
+(2) information collected by other companies and organizations who advertise their services on our services. <br/>
+<p><b>9.CHANGES TO THIS PRIVACY POLICY</b></p>
+We may from time to time revise or add specific instructions, policies and terms to this Privacy Policy. These instructions, policies and terms form part of this Privacy Policy. <br/>
+Where we consider that any changes to this Privacy Policy are reasonably material, we will notify you prior to the change becoming effective. <br/>
+By continuing to use our services after any changes to this Privacy Policy, with or without notice from us, you are agreeing to and are bound by the revised Privacy Policy. <br/>
+
+
+

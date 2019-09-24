@@ -1,0 +1,17 @@
+{
+    "import.invalid":"导入的内容不是有效的游戏或视频",
+    "import.invalid.en":"导入的内容不是有效的游戏或视频",
+    "import.exist":"该内容已存在，无法重复导入",
+    "import.exist.en":"该内容已存在，无法重复导入",
+    "download.failed.file.removed":"无法找到下载路径,下载失败",
+    "download.failed.file.removed.en":"Donwload path not exists,download failed",
+    "download.failed.file.removed.jp":"パスを見つけません、ダウンロードが失敗しました",
+    "download.path.removed":"下载目录被移除,无法下载",
+    "download.path.removed.en":"Download path removed is moved,please resetting it",
+    "download.path.removed.jp":"ダウンロードリストは削除され、ダウンロードできません",
+    "service.controller.device.plugin":"发现新设备，正在重启PiPlay...",
+    "service.controller.device.plugin.en":"detect new device，restarting PiPlay...",
+    "service.controller.device.unplugin":"定位设备已断开连接！",
+    "service.controller.device.unplugin.en":"",
+    "unknown":"unknown"
+}
