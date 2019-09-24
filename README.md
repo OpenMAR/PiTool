@@ -15,22 +15,3 @@ After the installation is complete, add the qt bin directory (such as C:\Qt\Qt5.
 Deployment steps:
 1. Run the build_pack_tool.bat script
 2. Enter the version number and press Enter to generate the installation package.
-
-Directory Structure:
-	├── Readme.md
-	├── LICENSE
-	├── build_pack_tool.bat
-	├── PiTool
-	│ ├── PiTool.pro
-	│ ├── src
-	│   └── main.cpp
-	│ ├── qml
-	│   └── main_tools.qml
-	│ ├── resource
-	│ └── piSvc
-	├── PiTool_setup
-	│ └── PiService
-	│ └── PvrRuntime
-	│ └── Resouces
-	│ └── dfudriver
-	└── setup
