@@ -17,7 +17,7 @@
     <message>
         <location filename="qml/CommonDownload.qml" line="52"/>
         <source>下载完成</source>
-        <translation>Done</translation>
+        <translation>Download complete</translation>
     </message>
     <message>
         <location filename="qml/CommonDownload.qml" line="54"/>
@@ -75,12 +75,12 @@
     <message>
         <location filename="qml/ConnectController.qml" line="63"/>
         <source>手柄1</source>
-        <translation>Controller1</translation>
+        <translation>Controller 1</translation>
     </message>
     <message>
         <location filename="qml/ConnectController.qml" line="70"/>
         <source>手柄2</source>
-        <translation>Controller2</translation>
+        <translation>Controller 2</translation>
     </message>
     <message>
         <location filename="qml/ConnectController.qml" line="79"/>
@@ -90,17 +90,17 @@
     <message>
         <location filename="qml/ConnectController.qml" line="85"/>
         <source>功能未实现</source>
-        <translation></translation>
+        <translation>Currently unsupported</translation>
     </message>
     <message>
         <location filename="qml/ConnectController.qml" line="107"/>
         <source>基站1</source>
-        <translation>BS1</translation>
+        <translation>Base Station 1</translation>
     </message>
     <message>
         <location filename="qml/ConnectController.qml" line="114"/>
         <source>基站2</source>
-        <translation>BS2</translation>
+        <translation>Base Station 2</translation>
     </message>
     <message>
         <location filename="qml/ConnectController.qml" line="125"/>
@@ -126,12 +126,12 @@
     <message>
         <location filename="qml/ConnectDevice.qml" line="65"/>
         <source>应用组件不完整，建议重新安装</source>
-        <translation>Incomplete</translation>
+        <translation>The application is missing components, please reinstall.</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="72"/>
         <source>系统缺少SP1补丁</source>
-        <translation>Missed</translation>
+        <translation>Windows Service Pack 1 is not installed</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="73"/>
@@ -142,27 +142,27 @@
     <message>
         <location filename="qml/ConnectDevice.qml" line="79"/>
         <source>服务未启动  </source>
-        <translation>Stoped</translation>
+        <translation>Service not running</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="80"/>
         <source>启动服务</source>
-        <translation></translation>
+        <translation>Service starting</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="91"/>
         <source>未检测到设备</source>
-        <translation>Not Dectect HMD</translation>
+        <translation>HMD not detected</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="102"/>
         <source>未检测到HDMI/DP</source>
-        <translation></translation>
+        <translation>HDMI/DP not connected</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="111"/>
         <source>当前的模式不支持，切回小派模式？</source>
-        <translation>The current mode does not support, switch Pimax mode? </translation>
+        <translation>The current mode is unsupported, switch Pimax mode? </translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="113"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="qml/ConnectDevice.qml" line="171"/>
         <source>服务未就绪，启动Leap Motion服务</source>
-        <translation>Service Not Ready,Launch Leap Motion</translation>
+        <translation>Service Not Ready, Launch Leap Motion</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="185"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="qml/ConnectDevice.qml" line="213"/>
         <source>将头盔置于定位基站可见范围内</source>
-        <translation>Place the helmet in the visible position of the base station</translation>
+        <translation>Place the HMD somewhere that the base station can see it</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="243"/>
@@ -249,7 +249,7 @@
     <message>
         <location filename="qml/ConnectDevice.qml" line="277"/>
         <source>未识别</source>
-        <translation>Unrecongnize</translation>
+        <translation>Not recognised</translation>
     </message>
     <message>
         <location filename="qml/ConnectDevice.qml" line="285"/>
@@ -263,7 +263,7 @@
     </message>
 </context>
 <context>
-    <name>ConnectModeSwicth</name>
+    <name>ConnectModeSwitch</name>
     <message>
         <location filename="qml/ConnectModeSwicth.qml" line="33"/>
         <source>小派玩家模式</source>
@@ -333,27 +333,27 @@
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="38"/>
         <source>Nolo定位方案更换为180°成功。</source>
-        <translation>Nolo positional solution changes to 180°successfully.</translation>
+        <translation>Nolo positional solution changed to 180° successfully.</translation>
     </message>
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="38"/>
         <source>Nolo定位方案更换为360°成功。</source>
-        <translation>Nolo positional solution changes to 360°successfully.</translation>
+        <translation>Nolo positional solution changed to 360° successfully.</translation>
     </message>
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="40"/>
         <source>Nolo定位方案更换为180°失败。</source>
-        <translation>Nolo positional solution changes to 180°failed.</translation>
+        <translation>Nolo positional solution change to 180° failed.</translation>
     </message>
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="40"/>
         <source>Nolo定位方案更换为360°失败。</source>
-        <translation>Nolo positional solution changes to 360°failed.</translation>
+        <translation>Nolo positional solution change to 360° failed.</translation>
     </message>
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="47"/>
         <source>(360°方案慎用，基站需摆放在2.7米以上)</source>
-        <translation>(360°solution should be used carefully, as the base station should be mounted above 2.7m)</translation>
+        <translation>(When using 360° solution, the base station should be mounted no lower than 2.7m)</translation>
     </message>
     <message>
         <location filename="qml/ConnectNoloSetting.qml" line="48"/>
@@ -427,12 +427,12 @@
     <message>
         <location filename="qml/ConnectUI.qml" line="128"/>
         <source>方向重置成功!</source>
-        <translation>Recenter Success!</translation>
+        <translation>Successfully recentered!</translation>
     </message>
     <message>
         <location filename="qml/ConnectUI.qml" line="130"/>
         <source>方向重置失败!</source>
-        <translation>Recenter Failed!</translation>
+        <translation>Failed to recenter!</translation>
     </message>
     <message>
         <location filename="qml/ConnectUI.qml" line="146"/>
@@ -517,7 +517,7 @@
     <message>
         <location filename="qml/Diagnose.qml" line="123"/>
         <source>未知原因,请通过以下方法解决：</source>
-        <translation>Unknown reasons, you can do:</translation>
+        <translation>Unable to diagnose error; please try the following:</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="133"/>
@@ -588,12 +588,12 @@
     <message>
         <location filename="qml/Diagnose.qml" line="233"/>
         <source>服务未开启</source>
-        <translation>Stoped</translation>
+        <translation>Stopped</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="242"/>
         <source>SP1补丁缺失</source>
-        <translation>Missed</translation>
+        <translation>Service Pack 1 is not installed</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="251"/>
@@ -622,12 +622,12 @@
     <message>
         <location filename="qml/Diagnose.qml" line="269"/>
         <source>此显卡驱动版本与头盔不匹配</source>
-        <translation>Version does not match</translation>
+        <translation>Graphics driver incompatible with HMD</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="302"/>
         <source>重新安装应用程序</source>
-        <translation>Please reinstall</translation>
+        <translation>Please reinstall this app</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="302"/>
@@ -653,12 +653,12 @@
     <message>
         <location filename="qml/Diagnose.qml" line="333"/>
         <source>请连接头盔USB</source>
-        <translation>Plugin USB</translation>
+        <translation>Plug in USB</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="348"/>
         <source>请连接头盔HDMI/DP线</source>
-        <translation>Plugin HDMI/DP</translation>
+        <translation>Plug in HDMI/DP</translation>
     </message>
     <message>
         <location filename="qml/Diagnose.qml" line="355"/>
@@ -756,7 +756,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="222"/>
         <source>电脑类型：</source>
-        <translation>Compute：</translation>
+        <translation>Computer type：</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="229"/>
@@ -766,7 +766,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="245"/>
         <source>应用组件不完整</source>
-        <translation>Incomplete</translation>
+        <translation>Incomplete installation</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="245"/>
@@ -782,12 +782,12 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="254"/>
         <source>服务已启动</source>
-        <translation>Running</translation>
+        <translation>Service Running</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="254"/>
         <source>服务未开启</source>
-        <translation>Stoped</translation>
+        <translation>Stopped</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="263"/>
@@ -819,7 +819,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="299"/>
         <source>没有检测到USB3.0接口</source>
-        <translation>Not detected</translation>
+        <translation>No USB3.0 interface detected</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="317"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="339"/>
         <source>无法识别</source>
-        <translation>Unknow</translation>
+        <translation>Unknown</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="348"/>
@@ -905,7 +905,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="421"/>
         <source>请安装缺失补丁</source>
-        <translation>Please install missing patches</translation>
+        <translation>Please install missing updates</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="429"/>
@@ -916,17 +916,17 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="437"/>
         <source>请连接头盔USB</source>
-        <translation>Plugin USB</translation>
+        <translation>Plug in USB</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="451"/>
         <source>集成显卡影响性能,请升级配置</source>
-        <translation>Low performance, please upgrade the configuration</translation>
+        <translation>Using an integrated graphics card causes poor performance; please install a dedicated graphics card</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="458"/>
         <source>请连接头盔HDMI/DP线</source>
-        <translation>Plugin HDMI/DP</translation>
+        <translation>Plug in HDMI/DP</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="472"/>
@@ -941,7 +941,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="499"/>
         <source>建议重新安装SteamVR</source>
-        <translation>Recommend to reinstall SteamVR</translation>
+        <translation>Please reinstall SteamVR</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseAll.qml" line="513"/>
@@ -951,7 +951,7 @@
     <message>
         <location filename="qml/DiagnoseAll.qml" line="552"/>
         <source>Unknow</source>
-        <translation>Unknow</translation>
+        <translation>Unknown</translation>
     </message>
 </context>
 <context>
@@ -992,7 +992,7 @@
     <message>
         <location filename="qml/DiagnoseWait.qml" line="74"/>
         <source>检测完成</source>
-        <translation>Detecting completed</translation>
+        <translation>Detection completed</translation>
     </message>
     <message>
         <location filename="qml/DiagnoseWait.qml" line="86"/>
@@ -1038,7 +1038,7 @@
     <message>
         <location filename="qml/DownloadingResource.qml" line="35"/>
         <source>暂无下载中的内容</source>
-        <translation>No available downloading</translation>
+        <translation>No download available</translation>
     </message>
     <message>
         <location filename="qml/DownloadingResource.qml" line="46"/>
@@ -1053,7 +1053,7 @@
     <message>
         <location filename="qml/DownloadingResource.qml" line="173"/>
         <source>预计剩余时间：</source>
-        <translation>Estimated Remaining Time </translation>
+        <translation>Estimated Time Remaining </translation>
     </message>
     <message>
         <location filename="qml/DownloadingResource.qml" line="181"/>
@@ -1063,7 +1063,7 @@
     <message>
         <location filename="qml/DownloadingResource.qml" line="207"/>
         <source>是否取消下载？</source>
-        <translation>Are you sure to cancel the download？</translation>
+        <translation>Are you sure you want to cancel the download？</translation>
     </message>
 </context>
 <context>
@@ -1161,7 +1161,7 @@
     <message>
         <location filename="qml/LibraryDialog.qml" line="175"/>
         <source>路径中仅可存在英文、阿拉伯数字或下划线</source>
-        <translation>Only allow English, digit or underscore characters for naming path file</translation>
+        <translation>Only alphanumeric characters and underscores are allowed in file path names</translation>
     </message>
 </context>
 <context>
@@ -1278,12 +1278,12 @@
     <message>
         <location filename="qml/LibraryListItem.qml" line="102"/>
         <source>需要启动Oculus服务，是否现在启动？</source>
-        <translation>Need to launch Oculus service, start now?</translation>
+        <translation>Need to launch the Oculus service, start now?</translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="124"/>
         <source>需启动Oculus Home</source>
-        <translation>Need to launch Oculus Service</translation>
+        <translation>Need to launch the Oculus Service</translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="126"/>
@@ -1313,7 +1313,7 @@
     <message>
         <location filename="qml/LibraryListItem.qml" line="221"/>
         <source>预计剩余时间：</source>
-        <translation>Estimated Remaining Time </translation>
+        <translation>Estimated Time Remaining </translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="238"/>
@@ -1338,17 +1338,17 @@
     <message>
         <location filename="qml/LibraryListItem.qml" line="325"/>
         <source>请在Steam App中卸载该游戏</source>
-        <translation>Please remove it in Steam app interface</translation>
+        <translation>Please remove via Steam app interface</translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="329"/>
         <source>请在Oculus home中卸载该游戏</source>
-        <translation>Please remove it in Oculus home</translation>
+        <translation>Please remove via Oculus home</translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="332"/>
         <source>从列表中移除所选内容?</source>
-        <translation>Do you want to remove the selection?</translation>
+        <translation>Do you want to remove the selected content?</translation>
     </message>
     <message>
         <location filename="qml/LibraryListItem.qml" line="369"/>
@@ -1374,7 +1374,7 @@
     <message>
         <location filename="qml/LoadingError.qml" line="20"/>
         <source>网络不好,</source>
-        <translation>Network is not well,</translation>
+        <translation>Network unstable,</translation>
     </message>
     <message>
         <location filename="qml/LoadingError.qml" line="21"/>
@@ -1387,7 +1387,7 @@
     <message>
         <location filename="qml/MyAlertPopup.qml" line="57"/>
         <source>删除所选内容?</source>
-        <translation>Do you want to delete the selection?</translation>
+        <translation>Do you want to delete the selected content?</translation>
     </message>
 </context>
 <context>
@@ -1478,12 +1478,12 @@
     <message>
         <location filename="src/OnlineModel.cpp" line="291"/>
         <source>获取视频详情出错!</source>
-        <translation>Error</translation>
+        <translation>Error getting video details!</translation>
     </message>
     <message>
         <location filename="src/OnlineModel.cpp" line="301"/>
         <source>获取视频推荐列表出错!</source>
-        <translation>Error</translation>
+        <translation>Error getting recommended video list!</translation>
     </message>
 </context>
 <context>
@@ -1504,14 +1504,14 @@
     <message>
         <location filename="qml/PairController.qml" line="66"/>
         <source>寻找控制器中...</source>
-        <translation>Search controller...</translation>
+        <translation>Searching for controller...</translation>
     </message>
     <message>
         <location filename="qml/PairController.qml" line="79"/>
         <source>同时按住系统键和菜单键，直到控制器指示灯呈蓝色闪烁
 表明已经进入配对模式。</source>
         <translation>Press and hold the App and System buttons
-until it chimes.
+until a chime plays.
 The controller LED should start blinking blue
 to indicate that it is in pairing mode.</translation>
     </message>
@@ -1588,7 +1588,7 @@ Click &apos;Retry&apos; below to try again.</translation>
         <location filename="qml/PairControllerSuccess.qml" line="49"/>
         <source>您的控制器已配对完毕并准备就绪。要
 配对另一个控制器，点击下方的配对另一个控制器。</source>
-        <translation>Your controller is paired and ready to.go
+        <translation>Your controller is paired and ready to go
 To pair another controller,
 click &apos;Another Controller&apos; below.</translation>
     </message>
@@ -1789,17 +1789,17 @@ two controllers can be connected at a time.</translation>
     <message>
         <location filename="src/ResourceModel.cpp" line="609"/>
         <source>game file not exist!</source>
-        <translation></translation>
+        <translation>Game file not found!</translation>
     </message>
     <message>
         <location filename="src/ResourceModel.cpp" line="720"/>
         <source>Resource is not exist</source>
-        <translation></translation>
+        <translation>Resource not found</translation>
     </message>
     <message>
         <location filename="src/ResourceModel.cpp" line="727"/>
         <source>download path removed</source>
-        <translation></translation>
+        <translation>Download path removed!</translation>
     </message>
     <message>
         <location filename="src/ResourceModel.cpp" line="803"/>
@@ -1809,7 +1809,7 @@ two controllers can be connected at a time.</translation>
     <message>
         <location filename="src/ResourceModel.cpp" line="1340"/>
         <source>file not exists</source>
-        <translation>file not exist</translation>
+        <translation>File not found</translation>
     </message>
 </context>
 <context>
@@ -1905,7 +1905,7 @@ configuration has been saved!</translation>
 接着测量该平面和地面的垂直距离，
 并在下方输入。</source>
         <translation>Place the Headset on a stable surface
-and click the Calibrate Floor button.Then
+and click the Calibrate Floor button. Then,
 measure the vertical distance between the
 surface and the floor and enter it below.</translation>
     </message>
@@ -2066,9 +2066,8 @@ using the Headset</translation>
         <location filename="qml/SettingBrainwarp.qml" line="55"/>
         <source>通过对画面以及头显追踪数据的预测
 以智能补帧的方式将刷新率提高。</source>
-        <translation>By predicting the tracking data and the picture
-of the headset, the refresh rate can be
-improved by smart complementary frame.</translation>
+        <translation>Use motion prediction to maintain smooth 
+tracking even when the frame rate drops.</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="64"/>
@@ -2093,31 +2092,31 @@ improved by smart complementary frame.</translation>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="93"/>
         <source>兼容使用平行投影</source>
-        <translation>Compatible with parallel projections</translation>
+        <translation>Parallel Projection compatibility mode</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="103"/>
         <source>兼容使用平行投影的游戏</source>
-        <translation>Compatible with parallel projections</translation>
+        <translation>Parallel projection game compatibility mode</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="104"/>
         <source>如发现某个游戏在头盔中画面无法
 重合。请尝试勾选此项，但这有可
 能对游戏的性能造成影响。</source>
-        <translation>If the picture of a game which is in the helmet is
-not superimposed, please tick this item. But this
-may have an impact on the performance of the game.</translation>
+        <translation>If you are seeing double or other 
+alignment artifacts, please enable this option. 
+However, game performance may be affected.</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="123"/>
         <source>兼容Vive独占游戏</source>
-        <translation>Compatible With Vive Only Game</translation>
+        <translation>Compatible with Vive-only games</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="137"/>
         <source>视场角(需要重启VR应用)</source>
-        <translation>Field Of View(Need restart VR application)</translation>
+        <translation>Field Of View (Requires VR application restart)</translation>
     </message>
     <message>
         <location filename="qml/SettingBrainwarp.qml" line="142"/>
@@ -2155,12 +2154,12 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingGeneral.qml" line="50"/>
         <source>语言切换(重启后生效)</source>
-        <translation>Select language(Restart to take effect)</translation>
+        <translation>Select language (Requires application restart)</translation>
     </message>
     <message>
         <location filename="qml/SettingGeneral.qml" line="62"/>
         <source>重启后生效,是否重启？</source>
-        <translation>Restart PiTool to take effect,restart now?</translation>
+        <translation>Your setting change won't take effect until the app is restarted - restart now?</translation>
     </message>
     <message>
         <location filename="qml/SettingGeneral.qml" line="77"/>
@@ -2180,7 +2179,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingGeneral.qml" line="110"/>
         <source>恢复默认</source>
-        <translation>Restore</translation>
+        <translation>Restore defaults</translation>
     </message>
     <message>
         <location filename="qml/SettingGeneral.qml" line="114"/>
@@ -2190,7 +2189,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingGeneral.qml" line="128"/>
         <source>路径中仅可存在英文、阿拉伯数字或下划线</source>
-        <translation>Only allow English, digit or underscore characters for naming path file</translation>
+        <translation>Only alphanumeric characters and underscores are allowed in file path names</translation>
     </message>
 </context>
 <context>
@@ -2251,7 +2250,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="68"/>
         <source>电脑类型：</source>
-        <translation>Compute</translation>
+        <translation>Computer type</translation>
     </message>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="73"/>
@@ -2291,7 +2290,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="115"/>
         <source>DX组件缺失，建议进行DX修复</source>
-        <translation>Missed</translation>
+        <translation>Missing DX components - reinstall DX</translation>
     </message>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="127"/>
@@ -2301,7 +2300,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="127"/>
         <source>服务未开启</source>
-        <translation>Stoped</translation>
+        <translation>Stopped</translation>
     </message>
     <message>
         <location filename="qml/SettingHelpDiagnose.qml" line="143"/>
@@ -2548,7 +2547,7 @@ may have an impact on the performance of the game.</translation>
     <message>
         <location filename="qml/SettingHmd.qml" line="117"/>
         <source>开启隐藏区域遮罩(需要重新启动SteamVR)</source>
-        <translation>Hidden Area Mask(Need restart SteamVR)</translation>
+        <translation>Hidden Area Mask (Requires SteamVR restart)</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="129"/>
@@ -2560,10 +2559,8 @@ may have an impact on the performance of the game.</translation>
         <source>这个功能勾选会使部分游戏有更好
 的性能，但是个别游戏可能会有显
 示异常问题</source>
-        <translation>Will make some games have
-better performance, but
-individual games may have
-abnormal display problems.</translation>
+        <translation>Improves performance in some games,
+but may cause visual artifacts.</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="150"/>
@@ -2599,27 +2596,27 @@ abnormal display problems.</translation>
         <location filename="qml/SettingHmd.qml" line="207"/>
         <source>观看电影，冷色调更
 佳。</source>
-        <translation>Watching movies, the
-cold color is better.</translation>
+        <translation>Improves color balance
+when watching movies.</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="218"/>
         <source>兼容使用平行投影</source>
-        <translation>Compatible with parallel projections</translation>
+        <translation>Parallel Projection compatibility mode</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="229"/>
         <source>兼容使用平行投影的游戏</source>
-        <translation>Compatible with parallel projections</translation>
+        <translation>Parallel Projection game compatibility mode</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="230"/>
         <source>如发现某个游戏在头盔中画面无法
 重合。请尝试勾选此项，但这有可
 能对游戏的性能造成影响。</source>
-        <translation>If the picture of a game which is in the helmet is
-not superimposed, please tick this item. But this
-may have an impact on the performance of the game.</translation>
+        <translation>If you are seeing double or other 
+alignment artifacts, please enable this option. 
+However, game performance may be affected.</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="244"/>
@@ -2711,14 +2708,14 @@ may have an impact on the performance of the game.</translation>
         <location filename="qml/SettingHmd.qml" line="467"/>
         <source>请适度调节，数值过
 高会导致卡顿。</source>
-        <translation>Please adjust it properly. The high
-value will lead to be stuck on display.</translation>
+        <translation>Take care when adjusting. High
+values will lead to stuttering and frame rate drops.</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="491"/>
         <location filename="qml/SettingHmd.qml" line="513"/>
         <source>画质调节失败!</source>
-        <translation>Rending Quality adjustment failed!</translation>
+        <translation>Render Quality adjustment failed!</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="550"/>
@@ -2842,7 +2839,7 @@ value will lead to be stuck on display.</translation>
     <message>
         <location filename="qml/SettingHmd.qml" line="1102"/>
         <source>更改此设置,头盔将自动断开重新连接,&lt;br/&gt;是否确认修改?</source>
-        <translation>The HMD will restart after settings changed, continue?</translation>
+        <translation>The HMD will restart to apply new settings, continue?</translation>
     </message>
     <message>
         <location filename="qml/SettingHmd.qml" line="1106"/>
@@ -2863,8 +2860,8 @@ value will lead to be stuck on display.</translation>
         <location filename="qml/SettingHmd.qml" line="1132"/>
         <source>磁校准将暂时无法使用头盔,请先退出游戏等！&lt;br/&gt;开始磁校准？</source>
         <translation>Please exit all the content before
-initiating magnetism calibration.
-       Start to calibrate now?</translation>
+initiating magnetic calibration.
+       Start calibration now?</translation>
     </message>
 </context>
 <context>
@@ -2872,12 +2869,12 @@ initiating magnetism calibration.
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="23"/>
         <source>磁校准</source>
-        <translation>Magnetism calibration</translation>
+        <translation>Magnetic calibration</translation>
     </message>
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="50"/>
         <source>请手持头盔，大幅度上下、左右翻转头盔，进行校准</source>
-        <translation>Please follow the graphic instruction as below to move HMD,&lt;br/&gt; then repeat all over again to finish calibration.</translation>
+        <translation>Please move the HMD as shown below,&lt;br/&gt; then repeat again to finish calibration.</translation>
     </message>
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="83"/>
@@ -2887,12 +2884,12 @@ initiating magnetism calibration.
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="85"/>
         <source>磁校准完成！</source>
-        <translation>Magnetism calibration done!</translation>
+        <translation>Magnetic calibration done!</translation>
     </message>
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="87"/>
         <source>磁校准失败，请关闭后重试！</source>
-        <translation> Magnetism calibration failed, please close it and retry.</translation>
+        <translation> Magnetic calibration failed, please close and retry.</translation>
     </message>
     <message>
         <location filename="qml/SettingMagnetCalibrate.qml" line="94"/>
@@ -2916,7 +2913,7 @@ initiating magnetism calibration.
         <location filename="qml/SettingSpaceCalibrate.qml" line="32"/>
         <source>将头盔放在稳定的平面上并朝向您想要面向的默认方位，
 接着测量该平面和地面间的垂直距离，并在下方输入(单位:厘米）</source>
-        <translation>Make the HMD face forward on your table.
+        <translation>Place the HMD facing forward on your table.
 Enter the vertical distance(cm) between the
 table and the ground in the box as below:</translation>
     </message>
@@ -2957,7 +2954,7 @@ table and the ground in the box as below:</translation>
         <location filename="qml/SettingUI.qml" line="90"/>
         <location filename="qml/SettingUI.qml" line="113"/>
         <source>已关闭</source>
-        <translation>Closed</translation>
+        <translation>Disabled</translation>
     </message>
     <message>
         <location filename="qml/SettingUI.qml" line="91"/>
@@ -2973,12 +2970,12 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/SettingUI.qml" line="103"/>
         <source>智能补帧</source>
-        <translation>Smart Sth</translation>
+        <translation>Smoothing</translation>
     </message>
     <message>
         <location filename="qml/SettingUI.qml" line="114"/>
         <source>不可用</source>
-        <translation>Unable</translation>
+        <translation>Unavailable</translation>
     </message>
     <message>
         <location filename="qml/SettingUI.qml" line="115"/>
@@ -3009,7 +3006,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/VersionChecking.qml" line="40"/>
         <source>正在检查更新...</source>
-        <translation>Checking for update</translation>
+        <translation>Checking for updates</translation>
     </message>
     <message>
         <location filename="qml/VersionChecking.qml" line="58"/>
@@ -3037,7 +3034,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/VersionChecking_DFU.qml" line="63"/>
         <source>您的固件已经是最新版本！</source>
-        <translation>No update is available</translation>
+        <translation>No updates available</translation>
     </message>
     <message>
         <location filename="qml/VersionChecking_DFU.qml" line="69"/>
@@ -3057,7 +3054,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/VersionChecking_DFU.qml" line="101"/>
         <source>升级过程中，头盔指示灯闪烁，完成后结束闪烁。</source>
-        <translation>The LED light on the headset will be flickering during the upgrade.</translation>
+        <translation>The LED light on the headset will flicker during the upgrade.</translation>
     </message>
     <message>
         <location filename="qml/VersionChecking_DFU.qml" line="112"/>
@@ -3131,7 +3128,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/VersionUpgradeConfirm.qml" line="28"/>
         <source>发现PiTool新版本</source>
-        <translation>New version is avialble</translation>
+        <translation>New version is available</translation>
     </message>
     <message>
         <location filename="qml/VersionUpgradeConfirm.qml" line="48"/>
@@ -3256,7 +3253,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/main_tools.qml" line="172"/>
         <source>发现新设备，是否重启服务?</source>
-        <translation>New device is defected, would you like to reconnect headset? </translation>
+        <translation>New device detected, would you like to restart the service? </translation>
     </message>
     <message>
         <location filename="qml/main_tools.qml" line="174"/>
@@ -3302,7 +3299,7 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/main_tools.qml" line="612"/>
         <source>小派设备未连接!&lt;br/&gt;提示：请先确认USB和HDMI/DP连接正常</source>
-        <translation>Pimax device is not connected!&lt;br/&gt;Tips:Please check USB &amp; HDMI/DP</translation>
+        <translation>Pimax device is not connected!&lt;br/&gt;Please check USB &amp; HDMI/DP connections</translation>
     </message>
     <message>
         <location filename="qml/main_tools.qml" line="744"/>
@@ -3337,17 +3334,17 @@ table and the ground in the box as below:</translation>
     <message>
         <location filename="qml/main_tools.qml" line="771"/>
         <source>缺少dfu驱动,是否下载安装?</source>
-        <translation>Your PC lacks DFU driver, installing now?</translation>
+        <translation>Your PC lacks a DFU driver, install now?</translation>
     </message>
     <message>
         <location filename="qml/main_tools.qml" line="773"/>
         <source>安装dfu驱动成功</source>
-        <translation>The DFU driver installation is completed.</translation>
+        <translation>The DFU driver installation is complete.</translation>
     </message>
     <message>
         <location filename="qml/main_tools.qml" line="775"/>
         <source>安装dfu驱动失败</source>
-        <translation>The DFU driver installation is failed.</translation>
+        <translation>The DFU driver installation has failed.</translation>
     </message>
     <message>
         <location filename="qml/main_tools.qml" line="809"/>
