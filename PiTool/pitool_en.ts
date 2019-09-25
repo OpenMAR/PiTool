@@ -2159,7 +2159,7 @@ However, game performance may be affected.</translation>
     <message>
         <location filename="qml/SettingGeneral.qml" line="62"/>
         <source>重启后生效,是否重启？</source>
-        <translation>Your setting change won't take effect until the app is restarted - restart now?</translation>
+        <translation>Your setting change won&apos;t take effect until the app is restarted - restart now?</translation>
     </message>
     <message>
         <location filename="qml/SettingGeneral.qml" line="77"/>
