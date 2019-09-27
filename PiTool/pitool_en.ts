@@ -263,7 +263,7 @@
     </message>
 </context>
 <context>
-    <name>ConnectModeSwitch</name>
+    <name>ConnectModeSwicth</name>
     <message>
         <location filename="qml/ConnectModeSwicth.qml" line="33"/>
         <source>小派玩家模式</source>
